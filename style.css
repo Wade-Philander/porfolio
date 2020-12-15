@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/*nav*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: crimson;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0 80px;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 35px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: whitesmoke;
+  font: size 18px;
+  font: weight 500;
+  margin-left: 25px;
+}
+
+/*---------------------home  styling --------------*/
+
+.home {
+  display: flex;
+  background: url("im.jpg") no-repeat;
+
+  height: 100vh;
+  color: whitesmoke;
+  min-height: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+p {
+  font-size: 27px;
+  color: aliceblue;
+}
+p1 {
+  font-size: 75px;
+  font-weight: 600px;
+  margin-left: -3px;
+}
+p2 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+p2 span {
+  color: crimson;
+  font-weight: 500;
+}
