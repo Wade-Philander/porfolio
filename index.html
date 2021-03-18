@@ -1,44 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <script src="index"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/366539c517.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!--Nav-->
-    <nav class="navbar">
-      <div class="max-width">
-        <div class="logo">
-          <a href="#">My Portfo<span>lio.</span></a>
-        </div>
-        <ul class="menu">
-          <li><a href="#"> Home </a></li>
-          <li><a href="#"> About </a></li>
-          <li><a href="#"> Services </a></li>
-          <li><a href="#"> Skills </a></li>
-          <li><a href="#"> Testimonials </a></li>
-          <li><a href="#"> Contact </a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wade.P Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/366539c517.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
-    <!--Home-->
-    <section class="home" id="home">
-      <div class="max-width">
-        <div class="home-content">
-          <p>Hello, my name is</p>
-          <p1>Wade Philander</p1><br />
-          <p2>Welcome to the future of <span> Web Development </span> </p2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+</head>
+<div class="preloader">
+    <div class="load">
+        <hr/><hr/><hr/><hr/>
+    </div>
+
+</div>
+
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"> <a href="#"><span> My </span>Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#test">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-      </div>
+    </nav>
+    <!-- HOME PAGE-->
+    <section class="home" id="home">
+
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text1">Hello, my name is</div>
+                <div class="text2">Wade Philander</div>
+                <div class="text3">And I am <span class="typing"></span></div>
+                <a href="https://www.facebook.com/wade.philander.56" target="Blank"><i class="fa fa-facebook-square"aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/wade-philander-56a945205/" target="Blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="https://github.com/Wade-Philander" target="Blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </section>
-  </body>
+
+    <!------------------------------ABOUT PAGE----------------------------------------->
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="Wade Philander (5).JPG">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Wade Philander <br>and I am <span class="typing2"></span></div>
+                    <p>I am a young and hungry Developer looking to bring new idea into this industry. I can do front-end developing applying my skills in HTML, CSS and javaScript to design a elegent website or improve a current website to give it a cutting-edge look that will have its viewer mesmerized. I am also very cable in doing back-end developing. Appling my knowledge of Python, MySQL and a bit of C-sharp to solve tomorrows social, industrial issues.
+                        <br>
+                        Personally, I prefer back-end developing because it plays t my strengths as a developer. <br>
+                        As a youth leader at my local church, I am also eager to impact the next generation to make a positive change in young peoples' lives. I took my first step towards my goal by being part of the board of a local NPO know as Chosen Youth Club based in Mitchell's Plain which launched Dec 2018.
+                        <br><br>
+                        Technlogy is my passion, being a developer is a art, doing the things I love and appreciate is what i aim to do and I am determined to make it a reality for myself and for the people I touch by making a difference in this world through a ever changing, growing and evolving industry.</p>
+                    <a href="CV WADE PHILANDER 2020.docx" target="_blank" download >Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------- SERVICE AND ABILITIES PAGE ----------------------->
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <div class="title">My Skills and Services</div>
+            <div class="service-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web-Designer</div>
+                        <p>Web-designing is all about innovation, elegence & change. Thats why using my knowledge of CSS and JavaScript would greatly enhance a website using those exact attributes to it fullest potentional in all it can do. </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Developer</div>
+                        <p>Being a Developer is never a easy task, but in the world we live in today solving rising issues or even avoiding uncertain pandemics lies at our finger tips and that is how us Developer will impact the world by soling tomorrows issues</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-laptop"></i>
+                        <div class="text">Content Creater</div>
+                        <p>As a content-creater for the gaming, on a social media platform, research and Technlogy is a big part of my everyday life studying things and learning while adapting is part of my everyday life.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------------------------------------------------------------------------------------->
+
+            <div class="skills" id="skills">
+                <p class="skills-info">
+                    We could never fully understand coding and its language because of the endless possibilies that it can give the world. From the easist languages in my arsenal such as, HTML and CSS to the toughest languages such as CSharp and Python, dedicating myself to learn all I can, and continue to learn all I can and implement them in my search for knowledge.
+                    <br><br>
+                    I have tried to increase my knowledge and have done my N6 in Business Managment at False Bay College during the year 2017 - 2018 at Mitchell's Plain campus. During the time I have completed causes in communication N4 N5, Introduction to Financial Accounting N4, Computer practise N4 N5 N6 and Entreneurship & Business Managment N4 N5 N6.
+                    <br><br>
+
+
+                </p>
+            </div>
+
+            <ul class="skills-bar-container">
+  
+                <li>
+                  <div class="progressbar-title">
+                    <h3>HTML5</h3>
+                    <span class="percent" id="html-pourcent"></span>
+                  </div>
+                  <div class="bar-container">
+                    <span class="progressbar progressred" id="progress-html"></span>
+                  </div>
+                </li>
+                <li>
+                  <div class="progressbar-title">
+                    <h3>CSS</h3>
+                    <span class="percent" id="css-pourcent"></span>
+                  </div>
+                  <div class="bar-container">
+                    <span class="progressbar progressblue" id="progress-css"></span>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="progressbar-title">
+                    <h3>JavaScript / jQuery</h3>
+                    <span class="percent" id="javascript-pourcent"></span>
+                  </div>
+                  <div class="bar-container">
+                    <span class="progressbar progresspurple" id="progress-javascript"></span>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="progressbar-title">
+                    <h3>Python</h3>
+                    <span class="percent" id="python-pourcent"></span>
+                  </div>
+                  <div class="bar-container">
+                    <span class="progressbar progressorange" id="progress-python"></span>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="progressbar-title">
+                    <h3>MySQL</h3>
+                    <span class="percent" id="spl-pourcent"></span>
+                  </div>
+                  <div class="bar-container">
+                    <span class="progressbar progressgreen" id="progress-spl"></span>
+                  </div>
+                </li>
+              </ul>
+        </div>
+    </section>
+
+    <!--------------------------------------PROJECTS----------------------------------------------------->
+
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class= title>My Projects</h2>
+
+            <h1 class="sub">Python Projects</h1>
+            <div class="wrapper">
+                <div class="card">
+                    <img src="weather-app-background-premgurusamy.png">
+                        <div class="descriptions">
+                        <h1>Tk. Weather App</h1>
+                        <p>
+                            Fetching my data from a Weather API, I have converted the json data using the knowledge I have learnt in Python. I am displaying the requested information from the user, using a built in function known as Tkinter.
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/Python.Weather.App/blob/main/weatherapp.py" target="blank"> <i class="fab fa-github"></i>
+                            Check github repository </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="LOTTO BALLS.jpg">
+                    <div class="descriptions">
+                        <h1>Tk. Lotto Draw</h1>
+                        <p>
+                            My lotto game is an a application designed with Tkinter in Python which allows the user to enter their chosen lucky numbers ranging between 0-50. The application will fetch 6 random numbers once again between 0-50 and dependin how many correct numbers the user has chosen, they would recieve a prize accordingly. All attempts are also recording on a .txt file after the game for analysis. 
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/Lotto-Game/blob/main/lottogame.py" target="blank"> <i class="fab fa-github"></i>Check github repository</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="8867268-sound-waves.jpg">
+                    <div class="descriptions">
+                        <h1>Tk. Media Player</h1>
+                        <p>
+                            This is a Media player application created in Python using a built in method Tkinter. This allows any sound wave in the format of .wav files to be played on the users device. This application allows the user to add .wav files from their device into the media player as well as manipulate the sound in terms of stopping and playing the media device. 
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/media-player.py/blob/main/yt_mp3_player.py" target="blank"> <i class="fab fa-github"></i> Check github repository </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="sub">Web Application Projects</h1>
+            <div class="wrapper">
+                <div class="card">
+                    <img src="mhlnews_4715_online_shopping_1.png">
+                        <div class="descriptions">
+                        <h1>Fashion SWEGGA</h1>
+                        <p>
+                            SWEGGA is a web application created using HTML & CSS. It is a tool created by online stores that allows the user to add as many of an object as possible and apon check, recieve the prices of those specific item and its quantity in total.
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/SWEGGA" target="blank"> <i class="fab fa-github"></i> Check github repository </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="N3DS_PokemonSuperMysteryDungeon_MainIllustration_png_jpgcopy.0.0.jpg">
+                        <div class="descriptions">
+                        <h1>POKe Desk API</h1>
+                        <p>
+                            This is a programme in JavaScript calling an API called POkeapi. This calls all the pokemon ever designed and displayed in a list of 10 at a time, sorted from A - Z. Allong with calling the pokemon images, user is also able to check all the moves and abilities the pokemon has.
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/PokeDesk" target="blank"> <i class="fab fa-github"></i> Check github repository </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="chuck.jpg">
+                        <div class="descriptions">
+                        <h1>Chuck Norris Jokes</h1>
+                        <p>
+                            This is a Web Application written in HTML and Python that allows the user to prompt 1 Chuck Norris Joke everytime the user refreshes the page. Using a API, I am able to call the information from the json data and display the information on the web page. It can also be styled using CSS.
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/ChuckNorrisJokesFlask/blob/main/chucknorrisjokes.py" target="blank"> <i class="fab fa-github"></i> Check github repository </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="sub">Websites</h1>
+            <div class="wrapper">
+                <div class="card">
+                    <img src="New.png">
+                        <div class="descriptions">
+                        <h1>Easy Website</h1>
+                        <p>
+                            An easy Website designed and styled using only HTML and CSS. It holds conent for a gaming channel called That_Gamer'Boy96. This gaming website gives all the content knowledge of the games that are being played as well as access to the YouTube videos that goes live weekly.
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/HTMLproject" target="blank"> <i class="fab fa-github"></i> Check github repository </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------TESTIMONIALS-------------------------------------------->
+
+    <section class="test" id="test">
+        <div class="max-width">
+            <h2 class="title">Testimonials</h2>
+            <div class="p">These are people I have closely worked with on various projects to achieve our goals before deadline date.<br> These people know how I work and have experienced my work first hand.<br> These are short Testimonials giving you an idea of my work ethics.</div>
+
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Ethan Lesch<br>Colleagues</div>
+                        <p>Wade is a harding student and within a group project. He never gives up and loves helping others</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Chelsea laguma<br>Colleagues</div>
+                        <p>Wade is the most considerate person I've ever met. Wade is dedicated to his work and would definitely be an asset to your organization</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Marcus leedenberg<br>Colleagues</div>
+                        <p>All that I can say is Wade knows what he wants and is determined to get the best out of it.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Robyn Harris<br>Colleagues</div>
+                        <p>Wade is a dedicated, hardworking indiviual, who always delivers good quality work on time.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Coming soon</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Coming soon</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="profile1.png" alt="">
+                        <div class="text">Coming soon</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------------CONTACT ME------------------------------------>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <p class="p">Using the below details you may contact me and I would gladly get back to you regardless of your query or inquiry</p>
+        
+            <div class="content">
+                <div class="contactinfo">
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt fa-5x"></i>
+                        </div>
+                        <div clas="text">
+                            <h3>Address</h3>
+                            <p>46 Welkom street, Portlands<br>Cape Town<br>7785<br><br></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone fa-5x"></i>
+                        </div>
+                        <div clas="text">
+                            <h3>Phone</h3>
+                            <p>Cell : +27 81 550 2066<br>WhatsApp: +27 67 402 66714<br><br></p>
+                        </div>
+                    </div>
+                        <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope-o fa-5x"></i>
+                    </div>
+                    <div clas="text">
+                        <h3>E-mail</h3>
+                        <p>wadephilander7@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" name="" placeholder="Full Name">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <p>
+            Created by <a target="blank" href="https://www.linkedin.com/in/wade-philander-56a945205/">Wade Philander</a>
+            Find me on: 
+            <a target="blank"  href=""><i class="fab fa-facebook-square"></i></a>
+            <a target="blank"  href="https://www.linkedin.com/in/wade-philander-56a945205/"><i class="fab fa-linkedin"></i></a> 
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
 </html>
