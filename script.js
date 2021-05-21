@@ -19,13 +19,13 @@ $(document).ready(function () {
 
   //typing animation
   var typed = new Typed(".typing", {
-    strings: ["The Future", "a Developer", "a Designer", "a Content Creater"],
+    strings: ["The Future", "a Developer", "a Designer", "a Content Creator", "a QA Tester"],
     typeSpeed: 100,
     backspeed: 60,
     loop: true,
   });
   var typed = new Typed(".typing2", {
-    strings: ["The Future", "a Developer", "a Designer", "a Content Creater"],
+    strings: ["The Future", "a Developer", "a Designer", "a Content Creator", "a QA Tester"],
     typeSpeed: 100,
     backspeed: 60,
     loop: true,
@@ -77,8 +77,8 @@ var lang = {
   html: "85%",
   css: "80%",
   javascript: "70%",
-  python: "65%",
-  spl: "55%",
+  python: "80%",
+  spl: "60%",
 };
 
 var multiply = 4;

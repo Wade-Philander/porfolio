@@ -16,20 +16,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 
 </head>
-<div class="preloader">
-    <div class="load">
-        <hr/><hr/><hr/><hr/>
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-
-</div>
 
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"> <a href="#"><span> My </span>Portfo<span>lio.</span></a></div>
+            <div class="logo"> <a href="#"> Wade Philander.</a></div>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -48,10 +48,10 @@
 
         <div class="max-width">
             <div class="home-content">
-                <div class="text1">Hello, my name is</div>
-                <div class="text2">Wade Philander</div>
-                <div class="text3">And I am <span class="typing"></span></div>
-                <a href="https://www.facebook.com/wade.philander.56" target="Blank"><i class="fa fa-facebook-square"aria-hidden="true"></i></a>
+                <div class="text1">Hey, I'm Wade and</div>
+                <div class="text3">I'm <span class="typing"></span></div>
+                <div class="p">Check out my work</div>
+                
                 <a href="https://www.linkedin.com/in/wade-philander-56a945205/" target="Blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                 <a href="https://github.com/Wade-Philander" target="Blank"><i class="fa fa-github" aria-hidden="true"></i></a>
             </div>
@@ -69,12 +69,13 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Wade Philander <br>and I am <span class="typing2"></span></div>
-                    <p>I am a young and hungry Developer looking to bring new idea into this industry. I can do front-end developing applying my skills in HTML, CSS and javaScript to design a elegent website or improve a current website to give it a cutting-edge look that will have its viewer mesmerized. I am also very cable in doing back-end developing. Appling my knowledge of Python, MySQL and a bit of C-sharp to solve tomorrows social, industrial issues.
+                    <p>I am a young and hungry Developer looking to bring new idea into this industry. 
+                        I can do front-end developing applying my skills in HTML, CSS and JavaScript to design a elegent website or improve a current website to give it a cutting-edge look that will have its viewer mesmerized. 
+                        I am also very cable in doing back-end developing. Appling my knowledge of Python, MySQL and a bit of C-sharp to solve tomorrows social, industrial issues.
                         <br>
-                        Personally, I prefer back-end developing because it plays t my strengths as a developer. <br>
-                        As a youth leader at my local church, I am also eager to impact the next generation to make a positive change in young peoples' lives. I took my first step towards my goal by being part of the board of a local NPO know as Chosen Youth Club based in Mitchell's Plain which launched Dec 2018.
+                         
                         <br><br>
-                        Technlogy is my passion, being a developer is a art, doing the things I love and appreciate is what i aim to do and I am determined to make it a reality for myself and for the people I touch by making a difference in this world through a ever changing, growing and evolving industry.</p>
+                    </p>
                     <a href="CV WADE PHILANDER 2020.docx" target="_blank" download >Download CV</a>
                 </div>
             </div>
@@ -105,8 +106,11 @@
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-laptop"></i>
-                        <div class="text">Content Creater</div>
-                        <p>As a content-creater for the gaming, on a social media platform, research and Technlogy is a big part of my everyday life studying things and learning while adapting is part of my everyday life.</p>
+                        <div class="text">QA Tester</div>
+                        <p>As a Junior QA Tester, I am able to provide a customers with the best possible UX/UI
+                            experience they can imagine. Using Python and the Flask framework whiling broadening my skill in JS and Jest framework,
+                            QA testing is a role I enjoy and look to improve as I grow as a Developer. 
+                        </p>
                     </div>
                 </div>
             </div>
@@ -115,11 +119,13 @@
 
             <div class="skills" id="skills">
                 <p class="skills-info">
-                    We could never fully understand coding and its language because of the endless possibilies that it can give the world. From the easist languages in my arsenal such as, HTML and CSS to the toughest languages such as CSharp and Python, dedicating myself to learn all I can, and continue to learn all I can and implement them in my search for knowledge.
+                    As a Developer, I enjoy back-end developing playing to alot of my strengths and understanding.
+                    Focusing alot around the Python language and frameworks, I've developed Tkinter projects and created
+                    databases using MySQL and SQLite. Using this language, I was introduces to QA testing where I've experience
+                    SQLAlchemy and Flask.
                     <br><br>
-                    I have tried to increase my knowledge and have done my N6 in Business Managment at False Bay College during the year 2017 - 2018 at Mitchell's Plain campus. During the time I have completed causes in communication N4 N5, Introduction to Financial Accounting N4, Computer practise N4 N5 N6 and Entreneurship & Business Managment N4 N5 N6.
-                    <br><br>
-
+                    JavaScript has also been one of my strengths as a Developer. Using API's to increase my ability to manipulate
+                    information as well as increasing my front-end capablities.
 
                 </p>
             </div>
@@ -147,7 +153,7 @@
                 
                 <li>
                   <div class="progressbar-title">
-                    <h3>JavaScript / jQuery</h3>
+                    <h3>JavaScript</h3>
                     <span class="percent" id="javascript-pourcent"></span>
                   </div>
                   <div class="bar-container">
@@ -157,7 +163,7 @@
                 
                 <li>
                   <div class="progressbar-title">
-                    <h3>Python</h3>
+                    <h3>Python/Flask</h3>
                     <span class="percent" id="python-pourcent"></span>
                   </div>
                   <div class="bar-container">
@@ -174,7 +180,25 @@
                     <span class="progressbar progressgreen" id="progress-spl"></span>
                   </div>
                 </li>
-              </ul>
+            </ul>
+            <div class="certificates">
+                <h2 class="title">Certificates</h2>
+                <div class="call">
+                    <a href="https://app.testdome.com/cert/fa035cba78ad4c44b19405e64ea63bfc" 
+                    class="testdome-certificate-stamp silver">
+                    <span class="testdome-certificate-name">Wade Philander</span>
+                    <span class="testdome-certificate-test-name">Software Quality Assurance </span>
+                    <span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a>
+                    <script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+                </div>
+                <div class="call">
+                <a href="https://app.testdome.com/cert/1d9255e74e304679ae776469befb5ae9" class="testdome-certificate-stamp silver">
+                    <span class="testdome-certificate-name">Wade Philander</span>
+                    <span class="testdome-certificate-test-name">Python </span>
+                    <span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a>
+                    <script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -267,6 +291,26 @@
                     </div>
                 </div>
             </div>
+            <div class="wrapper">
+                <div class="card">
+                    <img src="geolocation_inscription_place_136659_2560x1080.jpg">
+                        <div class="descriptions">
+                        <h1>5th Wave Geo-Location</h1>
+                        <p>
+                           This is a Web Application that makes use of Google maps geo-location. Allows the user to log in with the respective details and with there permission allowing the application to find where they are at that present moment.
+                        </p>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/final-frontend" target="blank"> <i class="fab fa-github"></i>Github Front-end repository </a>
+                        </button>
+                        <button>
+                            <a href="https://github.com/Wade-Philander/Final-backend" target="blank"> <i class="fab fa-github"></i>Github back-end repository </a>
+                        </button>
+                        <button>
+                            <a href="https://5thwave.netlify.app/" target="blank"> <i class="fas fa-map-marker-alt"></i> </i> The 5th Wave</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
             <h1 class="sub">Websites</h1>
             <div class="wrapper">
@@ -352,30 +396,11 @@
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact Me</h2>
-            <p class="p">Using the below details you may contact me and I would gladly get back to you regardless of your query or inquiry</p>
+            <p class="p">You are welcome to contact me at anytime and I would gladly get back to you as soon as I recieve it to answer any quries or questions you might have.</p>
         
             <div class="content">
                 <div class="contactinfo">
-
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fas fa-map-marker-alt fa-5x"></i>
-                        </div>
-                        <div clas="text">
-                            <h3>Address</h3>
-                            <p>46 Welkom street, Portlands<br>Cape Town<br>7785<br><br></p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone fa-5x"></i>
-                        </div>
-                        <div clas="text">
-                            <h3>Phone</h3>
-                            <p>Cell : +27 81 550 2066<br>WhatsApp: +27 67 402 66714<br><br></p>
-                        </div>
-                    </div>
-                        <div class="box">
+                    <div class="box"></div>
                     <div class="icon">
                         <i class="fa fa-envelope-o fa-5x"></i>
                     </div>
@@ -397,14 +422,6 @@
         </div>
     </div>
     </section>
-    <footer>
-        <p>
-            Created by <a target="blank" href="https://www.linkedin.com/in/wade-philander-56a945205/">Wade Philander</a>
-            Find me on: 
-            <a target="blank"  href=""><i class="fab fa-facebook-square"></i></a>
-            <a target="blank"  href="https://www.linkedin.com/in/wade-philander-56a945205/"><i class="fab fa-linkedin"></i></a> 
-        </p>
-    </footer>
     <script src="script.js"></script>
     </body>
 </html>
